@@ -1,0 +1,224 @@
+/* AboutusPage.css */
+
+/* Section 1: Full-width image with heading, description, and button */
+.full-width-image {
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+  }
+  
+  .full-width-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .full-width-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .full-width-content h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .full-width-content p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Section 2: Two columns layout */
+  .two-columns-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-column {
+    margin-top: 50px;
+    flex: 1;
+    overflow: hidden;
+  }
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+      transform-origin: center;
+    }
+    50% {
+      transform: scale(1.2); /* Zoom in to 120% */
+      transform-origin: center;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: center;
+    }
+  }
+  .image-column img {
+    width: 100%;
+    height: 80vh;
+    animation: zoomInOut 15s infinite alternate;
+  }
+  
+  .text-column {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .text-column h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .text-column p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Section 3: Six cards in two columns */
+ /* CSS for the six-cards-section with two cards per row */
+ .six-cards-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px;
+    padding: 20px;
+}
+.cards-heading{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.card-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Adjusted to ensure equal width */
+}
+
+.icon-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 20px;
+    gap: 10px;
+    width: 100%; /* Ensures cards take full width of column */
+    height: 100px; /* Set fixed height for all cards */
+    max-width: 90%; /* Set max-width to limit card width */
+  }
+  
+  .icon-card svg {
+    font-size: 36px; /* Size of the star icon */
+  }
+  
+  .icon-card div {
+    flex: 1; /* Allow text content to expand */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .icon-card h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .icon-card p {
+    color: #666;
+    margin: 5px 0;
+  }
+  
+
+  /* section forth */
+
+  .team-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display six cooks in two rows with three columns */
+    gap: 20px;
+  }
+  
+  .team-card {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .team-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .team-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .team-card p {
+    color: #666;
+  }
+
+  /* fifth section */
+
+  .reviews-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .reviews-grid {
+    display: flex;
+    justify-content: space-around; /* Space evenly between the review cards */
+    gap: 20px;
+  }
+  
+  .review-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px; /* Fixed width to ensure consistent card sizes */
+  }
+  
+  .review-image {
+    border-radius: 50%; /* Circular image */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .review-rating {
+    display: flex;
+    justify-content: center; /* Center the star icons */
+  }
+  
+  .review-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .review-card p {
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  

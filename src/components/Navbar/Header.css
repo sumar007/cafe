@@ -1,0 +1,101 @@
+/* Header.css */
+
+/* Header container styles */
+.header-container {
+    position: fixed; /* Fixed position to keep it on top */
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: green; /* Transparent background */
+    z-index: 999; /* Higher z-index to keep it on top */
+    box-shadow: -1px 7px 47px -4px rgba(5,1,1,0.81);
+}
+  
+/* Header left section */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+  
+/* Logo styling */
+.header-logo {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+  
+/* Search bar styling */
+.header-search {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none; /* Remove outline on focus */
+    transition: all 0.3s ease;
+}
+  
+.header-search:focus {
+    border-color: #009688; /* Change border color on focus */
+}
+  
+/* Header right section */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+  
+/* Navigation menu */
+.header-menu {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px; /* Space between list items */
+    margin-right: 20px;
+}
+  
+/* Navigation menu items */
+.header-menu li {
+    
+    cursor: pointer; /* Pointer cursor for menu items */
+    transition: color 0.3s;
+    color: white;
+}
+.header-menu li a {
+    text-decoration: none; /* Remove underline */
+    color: inherit;        /* Use the parent element's color */
+    transition: color 0.3s; /* Optional: Add smooth transition on hover */
+  }
+/* Active menu item */
+.header-menu li.active {
+    color:rgb(10, 253, 10); /* Change text color for active item */
+}
+
+.header-menu li:hover {
+    color: lightgray; /* Change text color on hover */
+}
+
+.header-icons {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px; /* Space between list items */
+    margin-right: 20px;
+}
+  
+/* Navigation menu items */
+.header-icons li {
+    
+    cursor: pointer; /* Pointer cursor for menu items */
+    transition: color 0.3s;
+    color: white;}
+.header-icons li a {
+    text-decoration: none; /* Remove underline */
+    color: inherit;        /* Use the parent element's color */
+    transition: color 0.3s; /* Optional: Add smooth transition on hover */
+  }
